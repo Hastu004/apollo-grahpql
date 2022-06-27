@@ -21,8 +21,8 @@ async function start() {
     await apolloServer.start()
     apolloServer.applyMiddleware({ app });
 
-    app.listen(9000, () => {
-        console.log('Server on port 9000');
+    app.listen(3000, () => {
+        console.log('Server on port 3000');
     })
 }
 
