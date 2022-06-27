@@ -28,11 +28,11 @@ const app = express()
 
 app.get('/', (req, res) => res.send('Welcome to API'))
 
-app.use('/graphql', graphqlHTTP({
-    schema: schema,
-    rootValue: root,
-    graphiql: true,
-}));
+// app.use('/graphql', graphqlHTTP({
+//     schema: schema,
+//     rootValue: root,
+//     graphiql: true,
+// }));
 
 
 async function start() {
