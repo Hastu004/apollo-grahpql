@@ -27,7 +27,7 @@ var root = {
 const app = express()
 
 app.get('/', (req, res) => res.send('Welcome to API'))
-// app.use('*', (req, res) => res.status(404).send('Not found'))
+
 app.use('/graphql', graphqlHTTP({
     schema: schema,
     rootValue: root,
